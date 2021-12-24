@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <!----can I put background image to the website externally? by creating id or class?
+I tried myselfm but wasn't able to add the background image-->
+<!----also I'm struggling on how to add opacity to the image only. 
+Here if I try to add opacity to the background image, opacity applies to whole body and alters the text-->
+  <body id="bckgimg">
+    <h1 id="title">Survey to enroll in English course</h1>
+    <p id="description">Thank you for taking time to fill in the form</p>
+    <form id="survey-form">
+      <label for="Name" id="name-label">Name</label><br />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter your name"
+        required
+      /><br />
+      <label for="Email" id="email-label">Email</label><br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      /><br />
+      <label for="Age" id="number-label">Age(optional)</label><br />
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="10"
+        max="20"
+        placeholder="number"
+      /><br />
+      <label>Would you recommend English course to a friend?</label><br />
+      <label for="Definitely"
+        ><input
+          type="radio"
+          name="attribute"
+          id="Definitely"
+          value="Definitely"
+        />Definitely</label
+      ><br />
+      <label for="Maybe"
+        ><input
+          type="radio"
+          name="attribute"
+          id="Maybe"
+          value="Maybe"
+        />Maybe</label
+      ><br />
+      <label for="Not sure"
+        ><input
+          type="radio"
+          name="attribute"
+          id="Not sure"
+          value="Not sure"
+        />Not sure</label
+      ><br />
+      <label
+        >What is your level of English<br />
+        <select name="level" id="dropdown">
+          <option value="level">Beginner</option>
+          <option value="level">Elementary</option>
+          <option value="level">Pre-intermediate</option>
+          <option value="level">Intermediate</option>
+          <option value="level">Upper-intermediate</option>
+          <option value="level">Advanced</option>
+        </select> </label
+      ><br />
+      <label for="option"
+        >What would you like to learn?(check all that apply) <br />
+        <input
+          type="checkbox"
+          name="option"
+          id="option"
+          value="1"
+        />Speaking<br />
+        <input
+          type="checkbox"
+          name="option"
+          id="option"
+          value="2"
+        />Listening<br />
+        <input
+          type="checkbox"
+          name="option"
+          id="option"
+          value="3"
+        />Reading<br />
+        <input
+          type="checkbox"
+          name="option"
+          id="option"
+          value="4"
+        />Writing<br />
+      </label>
+      <label for="comments">Any comments and suggestions?</label><br />
+      <textarea
+        name="comments"
+        id="comments"
+        style="font-family: sans-serif; font-size: 1.2em"
+      >
+        Leave a comment
+        </textarea
+      >
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
